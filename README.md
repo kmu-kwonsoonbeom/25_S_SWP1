@@ -1,2 +1,1 @@
-20222057 kwonsoonbeom
-Kookmin Univ. SW
+#my name is ...
