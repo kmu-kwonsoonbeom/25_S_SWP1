@@ -183,6 +183,19 @@ def main():
     print_matrix(trn)
 
 
+    print("\n=== 동치관계 재판별 ===")
+    matrix = reflexive_closure(matrix)
+    matrix = symmetric_closure(matrix)
+    matrix = transitive_closure(matrix)
+    print("변환 후 행렬:")
+    print_matrix(matrix)
+    if is_reflexive(matrix) and is_symmetric(matrix) and is_transitive(matrix):
+        print("\n⇒ 동치 관계이므로 동치류 출력:")
+        print_equivalence_classes(matrix, A)
+    else:
+        print("\n⇒ 동치 관계가 아님")
+
+
 # 실행
 if __name__ == "__main__":
     main()
